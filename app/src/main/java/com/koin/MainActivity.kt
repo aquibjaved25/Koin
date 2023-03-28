@@ -1,10 +1,8 @@
 package com.koin
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.koin.container.Component
-import com.koin.demo.Car
-import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,5 +14,8 @@ class MainActivity : AppCompatActivity() {
 
         component.car.getCar()
         component.main.getDemo()
+
+        component.mainViewModel.getTest()
+        component.test.getTest()
     }
 }
